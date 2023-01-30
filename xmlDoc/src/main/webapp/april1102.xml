@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE myfriends SYSTEM "april1102.dtd">
+<myfriends>
+<name>홍길동</name>
+<name>김길동</name>
+<name>오길동</name>
+<name>마길동</name>
+<name>하길동</name>
+</myfriends>

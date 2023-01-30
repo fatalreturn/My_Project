@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT playerlist (positions, player+)>
+	<!ELEMENT positions (position+)>
+		<!ELEMENT position (#PCDATA)>
+	<!ELEMENT player (name, team, age, height, weight)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT team (#PCDATA)>		
+		<!ELEMENT age (#PCDATA)>
+		<!ELEMENT height (#PCDATA)>
+		<!ELEMENT weight (#PCDATA)>
+<!ATTLIST position id ID #REQUIRED>
+<!ATTLIST player back ID #REQUIRED pos IDREF #REQUIRED> 
+		
+		
+		
+		
+		
+		
+		

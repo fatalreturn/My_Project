@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE playerlist SYSTEM "april1404.dtd">
+<playerlist>
+	<teams>
+		<team id="SF">서울FC</team>
+		<team id="TT">토트넘</team>
+	</teams>
+	<positions>
+		<position id="F">포워드</position>
+		<position id="D">디펜스</position>
+	</positions>
+	<player back="N07" team="TT" pos="F">
+		<name>손흥민</name>
+		<age>29</age>
+		<height>183</height>
+		<weight>77</weight>
+		<goal>203</goal>
+	</player>
+</playerlist>
+
+
+
+
+
+

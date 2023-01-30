@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+//무한반복 : 특정한 조건이 만족될 때까지 반복
+//예) 메뉴:1.인사관리, 2:자재관리,,,9:종료
+for(var cnt=1; cnt<=10; cnt++){//10회 반복
+	document.write("<font size='20'>"+cnt+"</font>");
+}
+document.write("<br/>");//줄바꿈
+for(var cnt=1; cnt<=10; cnt++){//10회 반복
+	document.write("<font size='20'>"+cnt+"</font>");
+	if(cnt == 5) break;
+}
+document.write("<br/>");//줄바꿈
+for(var cnt=1; cnt<=10; cnt++){//10회 반복
+	if(cnt == 5) continue;
+	document.write("<font size='20'>"+cnt+"</font>");
+}
+document.write("<br/>");//줄바꿈
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

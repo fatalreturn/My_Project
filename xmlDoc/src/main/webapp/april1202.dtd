@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT playerlist (player+)>
+<!ELEMENT player 
+(name,(position | location),age,height,weight,backnumber?,score?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT weight (#PCDATA)>
+<!ELEMENT backnumber (#PCDATA)>
+<!ELEMENT score (#PCDATA)>

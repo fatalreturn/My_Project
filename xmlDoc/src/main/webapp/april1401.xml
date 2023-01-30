@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist SYSTEM "april1401.dtd">
+<booklist>
+	<book id="c001" genre="컴퓨터">
+		<title>XML의 기초</title>
+		<writer>홍길동</writer>
+		<price>10000</price>
+		<publisher>길동 출판사</publisher>
+	</book>
+	<book id="c002" genre="컴퓨터">
+		<title>XML의 기초</title>
+		<writer>홍길동</writer>
+		<price>10000</price>
+		<publisher>길동 출판사</publisher>
+	</book>
+</booklist>
+

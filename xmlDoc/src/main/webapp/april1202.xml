@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE playerlist SYSTEM "april1202.dtd">
+<playerlist>
+	<player>
+		<name>차범근</name>
+		<location>포워드</location>
+		<age>32</age>
+		<height>186</height>
+		<weight>89</weight>
+	</player>
+	<player>
+		<name>손흥민</name>
+		<position>포워드</position>
+		<age>22</age>
+		<height>188</height>
+		<weight>89</weight>
+		<backnumber>56</backnumber>
+		<score>22</score>
+	</player>
+</playerlist>
+
+
+
+
+

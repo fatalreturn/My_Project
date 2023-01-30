@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+function add(num1,num2){
+	return num1 + num2;
+}
+function sub(num1,num2){
+	return num1 - num2;
+}
+function mul(n1,n2){
+	var result = n1 * n2;
+	return result;
+}
+function div(su1, su2){
+	if(su2 == 0){
+		alert("0으로 나눌 수 없습니다.");
+		return 0;
+	}
+	var result = su1 / su2;
+	return result;
+}
+function calculate(){
+	var input1 = prompt("첫번째 수를 입력하세요.");
+	var input2 = prompt("두번째 수를 입력하세요.");
+	var num1 = parseInt(input1);
+	var num2 = parseInt(input2);
+	var result1 = add(num1,num2);//덧셈을 수행
+	var result2 = sub(num1,num2);//뺄셈을 수행
+	var result3 = mul(num1,num2);//곱셈을 수행
+	var result4 = div(num1,num2);//나눗셈을 수행
+	document.write("<h3>덧셈:"+result1+
+		",뺄셈:"+result2+",곱셈:"+result3+
+		",나눗셈:"+result4+"</h3>");
+}
+</script>
+<header>
+	<h2 align="center">사칙 연산 ver1.0</h2>
+</header>
+<section>
+	<p>두 수를 입력하고 버튼을 누르면, 사칙연산의 결과가
+		출력됩니다.<br/>
+		<input type="button" value="시작하기"
+			onClick="calculate()"/>
+	</p>
+</section>
+<footer>
+	<h3 align="center">2022년 5월 9일</h3>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+

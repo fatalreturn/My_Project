@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<div align="center">
+<h2>로또 번호 생성기 ver1.0</h2>
+<input type="button" value="번호 생성" 
+		onClick="makeLotto()"/><br/>
+<div id="result">이곳에 출력됩니다.</div>
+<h2>이벤트 당첨자 추첨</h2>
+<p>여름 맞이 행사에 참석한 참석자가 모두 2352명입니다.<br/>
+참석자 중에 이벤트 당첨자를 추첨합니다. 당첨자는 모두 10명입니다.<br/>
+참석자는 모두 1부터 2352번까지 번호를 가지고 있습니다.<br/>
+10명의 당첨자를 출력합니다.</p>
+<input type="button" value="당첨자 발표"
+			onClick="makeWinner()"/>
+<div id="winner">이곳에 출력됩니다.</div>
+</div>
+<script type="text/javascript">
+function makeWinner(){
+	var numbers = [];
+	for(var cnt=0; cnt<2352; cnt++){
+		numbers[cnt] = cnt+1;
+	}//numbers배열에 1부터 2352의 숫자를 넣는다.
+	var imsi = 0;
+	for(var cnt=0; cnt<5000; cnt++){//5000번 반복
+		imsi = numbers[0];
+		var nansu = parseInt(Math.random()*2352);
+		numbers[0] = numbers[nansu];
+		numbers[nansu] = imsi;
+	}
+	var html = "<table border='1'><tr>";
+	//배열에서 10개의 값을 가지고 와서 <td></td>를 만든다.
+	for(var cnt=0; cnt<10; cnt++){//10번 반복
+		html = html+"<td>"+numbers[cnt]+"</td>";
+	}
+	html = html + "</tr></table>";
+	document.getElementById("winner").innerHTML=html;
+}
+function makeLotto(){
+	var numbers = new Array();//1~45의 숫자를 배열에 넣는다.
+	for(var cnt=0; cnt<45; cnt++){
+		numbers[cnt] = cnt + 1;
+	}
+	var imsi = -1;
+	for(var cnt=0; cnt<500; cnt++){
+		imsi = numbers[0];
+		var nansu = parseInt(Math.random()*45);
+		numbers[0] = numbers[nansu];
+		numbers[nansu] = imsi;
+	}//섞는다.(500번, 충분히 섞으면 되므로 횟수는 본인이 결정)
+	var html = "";
+	for(var cnt=0; cnt<6;cnt++){
+		html = html+numbers[cnt]+" ";
+	}
+	document.getElementById("result").innerHTML=html;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

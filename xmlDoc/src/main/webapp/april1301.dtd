@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT itemlist (item+)>
+<!ELEMENT item (title,maker,date,origin,price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT maker (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT origin (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST item kind CDATA #IMPLIED>

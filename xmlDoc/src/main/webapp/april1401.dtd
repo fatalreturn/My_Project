@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT booklist (book+)>
+<!ELEMENT book (title, writer, price, publisher)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+
+<!ATTLIST book genre (소설|과학|컴퓨터|경영) "컴퓨터" id ID #REQUIRED>
+
+
+
+
+
+
+

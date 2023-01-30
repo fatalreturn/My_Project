@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tourlist SYSTEM "april14.dtd">
+<tourlist>
+	<city name="강원">
+		<name>강릉</name>
+		<addr>강릉시</addr>
+		<tel>041-123-6789</tel>
+	</city>
+	<city name="인천">
+		<name>자유공원</name>
+		<addr>인천시</addr>
+		<tel>032-1234-4567</tel>
+		<intro>인천을 대표하는 공원</intro>
+	</city>
+</tourlist>

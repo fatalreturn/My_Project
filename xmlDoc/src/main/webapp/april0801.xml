@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE myfriends 
+[<!ELEMENT myfriends (name+)> 
+<!ELEMENT name (#PCDATA)> ]>
+<myfriends>
+<name>홍길동</name><name>김길동</name>
+<name>이길동</name><name>오길동</name>
+</myfriends>

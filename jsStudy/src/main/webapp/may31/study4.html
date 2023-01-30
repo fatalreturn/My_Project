@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<div align="center">
+<h2>배열을 이용한 성적처리 ver1.0</h2>
+	<p>20명 학생의 성적과 이름을 내림차순으로 출력합니다.</p>
+<input type="button" value="성적처리" onClick="makeResult()"/>
+<div id="result"></div>  
+<p>25명의 학생이 JPT시험(0~990)을 봤습니다. 25명 학생의 명단과 점수,
+		총점,평균,최고점,최저점을 출력합니다.</p>
+<input type="button" value="JPT결과" onClick="makeJpt()"/>
+</div>
+<script type="text/javascript">
+var student = {};//student객체 선언
+student.name="";//학생의 이름
+student.score=0;//학생의 점수
+function Student(n, s){
+	this.name = n;
+	this.score = s;
+}
+function rnd(num){
+	return parseInt(Math.random()*num);
+}
+function makeResult(){
+	var surname=["김","이","박","최","정","조","하","구",
+		"곽","채","송","곽","문","전","윤"];
+	var firstname=["태균","미정","정수","병환","영호","준",
+		"태건","태범","재성","보환","명훈","현우","동원",
+		"승아","진선","선미","태우","선미"];
+	var stds = new Array();
+	var totalScore = 0; var max = 0; var min = 0;
+	for(var cnt=0; cnt<20; cnt++){//20회 반복
+		var name=surname[rnd(surname.length)];
+		name=name+firstname[rnd(firstname.length)];
+		stds[cnt] = new Student(name,rnd(101));
+		totalScore=totalScore + stds[cnt].score;
+	}
+	max = stds[0].score; min = stds[0].score;
+	for(var cnt=1; cnt<20; cnt++){
+	//19회 반복하면서 최고점 및 최저점 탐색
+		if(stds[cnt].score > max){
+			max = stds[cnt].score;
+		}
+		if(stds[cnt].score < min){
+			min = stds[cnt].score;
+		}
+	}
+	for(var cnt=0; cnt<20;cnt++){
+		document.write(stds[cnt].name+","+stds[cnt].score+"<br/>");
+	}
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

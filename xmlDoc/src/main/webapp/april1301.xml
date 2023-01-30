@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE itemlist SYSTEM "april1301.dtd">
+<itemlist>
+	<item>
+		<title>청바지</title>
+		<maker>리바이스</maker>
+		<date>2021/11/23</date>
+		<origin>멕시코</origin>
+		<price>80000</price>
+	</item>
+	<item kind="전자제품">
+		<title>노트북</title>
+		<maker>삼성전자</maker>
+		<date>2022/04/13</date>
+		<origin>대한민국</origin>
+		<price>500000</price>
+	</item>
+</itemlist>

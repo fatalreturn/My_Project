@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist SYSTEM "april1402_.dtd">
+<booklist>
+	<genres>
+		<genre id="A">소설</genre>
+		<genre id="B">과학</genre>
+		<genre id="C">컴퓨터</genre>
+	</genres>
+	<book genre="C" id="C001">
+		<title>XML의 기초</title>
+		<writer>홍길동</writer>
+		<price>10000</price>
+		<publisher>길동출판사</publisher>
+	</book>
+	<book genre="A" id="A001">
+		<title>홍길동전</title>
+		<writer>허균</writer>
+		<price>10000</price>
+		<publisher>길동출판사</publisher>
+	</book>
+</booklist>
+
+
+
+
+
+

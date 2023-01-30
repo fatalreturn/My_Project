@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist SYSTEM "april12.dtd">
+<booklist>
+<title>홍길동전</title>
+<writer>허균</writer>
+<author>김균</author>
+<author>박균</author>
+<price>10000</price>
+<publisher>길동출판사</publisher>
+</booklist>

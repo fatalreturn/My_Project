@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actorlist 
+[<!ELEMENT actorlist (name+)> 
+<!ELEMENT name (#PCDATA)>]>
+<actorlist>
+<name>장동건</name>
+<name>김혜수</name>
+<name>아놀드 슈왈츠네거</name>
+</actorlist>

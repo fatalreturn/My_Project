@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE playerlist SYSTEM "april1403.dtd">
+<playerlist>
+	<positions>
+		<position id="F">1루수</position><position id="P">투수</position>
+		<position id="C">포수</position>
+	</positions>
+	<player back="B01" pos="C">
+		<name>홍길동</name><team>삼성 라이언즈</team><age>32</age>
+		<height>175</height><weight>78</weight>
+	</player>
+	<player back="B99" pos="P">
+		<name>홍길동</name><team>두산 베어즈</team>
+		<age>25</age><height>182</height><weight>86</weight>
+	</player>
+</playerlist>

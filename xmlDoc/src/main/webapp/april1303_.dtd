@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT teamlist (team+)>
+<!ELEMENT team (name, owner, addr, ranking)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT owner (#PCDATA)>
+<!ELEMENT addr (#PCDATA)>
+<!ELEMENT ranking (#PCDATA)>
+<!ATTLIST team kind CDATA #REQUIRED section CDATA "프로">
+<!ATTLIST name nation CDATA #FIXED "대한민국">

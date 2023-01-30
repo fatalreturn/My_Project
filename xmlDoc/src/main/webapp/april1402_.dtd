@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT booklist (genres, book+)>
+	<!ELEMENT genres (genre+)>
+		<!ELEMENT genre (#PCDATA)>
+	<!ELEMENT book (title, writer, price, publisher)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT writer (#PCDATA)>
+		<!ELEMENT price (#PCDATA)>
+		<!ELEMENT publisher (#PCDATA)>
+		
+<!ATTLIST genre id ID #REQUIRED>		
+<!ATTLIST book genre IDREF #REQUIRED id ID #REQUIRED>
+
+
+
+
+
+

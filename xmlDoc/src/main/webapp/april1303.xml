@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teamlist SYSTEM "april1303_.dtd">
+<teamlist>
+	<team kind="축구" section="프로">
+		<name nation="대한민국">서울FC</name>
+		<owner>서울시</owner>
+		<addr>서울시 종로구</addr>
+		<ranking>3</ranking>
+	</team>
+</teamlist>

@@ -1,0 +1,9 @@
+127.0.0.1 - - [14/Sep/2022:21:34:12 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:21:34:13 +0900] "GET /myHome/template.jsp HTTP/1.1" 200 3131
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:21:34:13 +0900] "GET /myHome/logo.gif HTTP/1.1" 200 2604
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:21:34:13 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:21:34:16 +0900] "GET /myHome/template.jsp HTTP/1.1" 200 3131
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:21:34:17 +0900] "GET /myHome/getAllBBS.do HTTP/1.1" 500 4329
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:21:34:17 +0900] "GET /myHome/template.jsp?BODY=NoticeSelectAllServlet HTTP/1.1" 500 6841
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:21:34:21 +0900] "GET /myHome/getAllBBS.do HTTP/1.1" 500 4329
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:21:34:24 +0900] "GET /myHome/getAllItems HTTP/1.1" 500 4240

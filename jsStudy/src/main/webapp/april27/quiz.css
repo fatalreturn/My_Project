@@ -1,0 +1,25 @@
+@charset "EUC-KR";
+h1 {background-color:orange; color:blue; 
+	line-height:60px; text-align:center;
+	font-family:'±√º≠√º','±º∏≤√º','∞ÌµÒ√º'; }
+#menu { height:50px; width:100%; 
+	background-color:lightgreen;}  
+#menu ul li {list-style:none; color:blue;
+	line-height:50px; display:inline-block;
+	vertical-align:middle;	text-align:center;}	 
+#menu .link {display:block; width:150px; color:black;}
+section {background-color:orange; 
+		padding:10px; margin:10px;}
+footer {background-color:orange; 
+		padding:10px; margin:10px;}     
+table {border:2px solid black; text-align:center;
+	border-collapse:collapse;}
+table tr th {border:1px solid black; }
+table tr td {border:1px solid black; }
+		
+		
+		
+		
+		
+		
+		

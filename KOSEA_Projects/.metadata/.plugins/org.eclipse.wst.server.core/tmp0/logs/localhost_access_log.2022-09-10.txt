@@ -1,0 +1,12 @@
+127.0.0.1 - - [10/Sep/2022:20:22:26 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:20:22:28 +0900] "GET /myHome/template.jsp HTTP/1.1" 200 3131
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:20:22:28 +0900] "GET /myHome/logo.gif HTTP/1.1" 200 2604
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:20:22:31 +0900] "GET /myHome/getAllItems HTTP/1.1" 500 10126
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:20:22:36 +0900] "GET /myHome/ HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:20:22:37 +0900] "GET /myHome/template.jsp?BODY=NoticeSelectAllServlet HTTP/1.1" 500 13500
+127.0.0.1 - - [10/Sep/2022:20:25:08 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:20:25:09 +0900] "GET /myHome/template.jsp HTTP/1.1" 200 3131
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:20:25:09 +0900] "GET /myHome/logo.gif HTTP/1.1" 200 2604
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:20:25:09 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:20:25:11 +0900] "GET /myHome/template.jsp?BODY=NoticeSelectAllServlet HTTP/1.1" 500 13462
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:20:25:13 +0900] "GET /myHome/template.jsp?BODY=NoticeSelectAllServlet HTTP/1.1" 500 13462

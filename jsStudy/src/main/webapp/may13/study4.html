@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+//반복의 중첩
+document.write("<h2>구구단 1단~9단</h2>");
+document.write("<table border='1'>");
+for(var dan=1; dan<=9;dan++){//단 반복
+	document.write("<tr><td>"+dan+"단</td></tr>");
+	for(var su=1; su<10;su++){//수 반복
+		document.write("<tr><td>"+dan+"*"+su+"="+
+			(dan*su)+"</td></tr>");
+	}
+}
+document.write("</table><br/>");
+document.write("<h2>구구단 2</h2>");
+document.write("<table border='1'>");
+for(var dan=1; dan<=9;dan++){
+	document.write("<tr align='center'><td colspan='9'>"+
+			dan+"단</td></tr><tr>");
+	for(var su=1; su<10;su++){
+		document.write("<td>"+dan+"*"+su+"="+(dan*su)+
+				"</td>");
+	}
+	document.write("</tr>");
+}
+document.write("</table><br/>");
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

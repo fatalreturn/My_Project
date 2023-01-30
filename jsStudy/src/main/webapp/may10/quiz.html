@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+header { background-color:lightgreen; padding:20px;}
+section {background-color:lightgreen; padding:20px;
+			border:2px solid blue;}
+footer { background-color:lightgreen; padding:20px;}
+</style>
+</head>
+<body>
+<header>
+	<h1 align="center">올림픽 메달 목록 ver1.0</h1>
+</header>
+<script type="text/javascript">
+function medal(gold,silver,bronze){
+	var str="금메달 "+gold+"개,은메달 "+silver+"개,동메달 "+
+		bronze+"개";
+	return str;
+}
+function showChina(){
+	var str = medal(9,10,11);
+	document.getElementById("c").innerHTML = str;
+}
+function showKorea(){
+	var str = medal(10,9,8);
+	document.getElementById("k").innerHTML = str;
+}
+function showJapan(){
+	var str = medal(8,9,10);
+	document.getElementById("j").innerHTML = str;
+}
+function hideKorea(){
+	document.getElementById("k").innerHTML = 
+				"<span id='k'>한국 = ?</span>";
+}
+function showMedal(su){
+	var num = parseInt(su);
+	if(num == 1){
+		showKorea();		
+	}else if(num == 2){
+		showJapan();	
+	}else if(num == 3){
+		showChina();	
+	}
+// 	switch(num){
+// 	case 1: showKorea(); break;
+// 	case 2: showJapan(); break;
+// 	case 3: showChina(); break;
+// 	}
+}
+</script>
+<section>
+	<h2 align="center">한국 = <span id="k">?</span>
+	<input type="button" value="보기" 
+					onClick="showMedal(1)"/></h2>
+	<h2 align="center">일본 = <span id="j">?</span>
+	<input type="button" value="보기" 
+					onClick="showMedal(2)"/></h2>
+	<h2 align="center">중국 = <span id="c">?</span>
+	<input type="button" value="보기" 
+					onClick="showMedal(3)"/></h2>
+</section>
+<footer>
+	<h3 align="center">2022년 5월 10일. 도전과제</h3>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+

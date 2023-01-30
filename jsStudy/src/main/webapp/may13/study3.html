@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+//반복의 중첩
+var msg = "<table border='1'><tr>";
+for(var cnt=1; cnt<=10; cnt++){//10회
+	msg = msg + "<td>"+cnt+"</td>";
+}
+msg = msg + "</tr></table><br/>";
+msg = msg + "<table border='1'>"
+for(var cnt=1; cnt<11; cnt++){
+	msg = msg + "<tr><td>"+cnt+"</td></tr>";
+}
+msg = msg + "</table><br/>";
+msg = msg + "<table border='1'>";
+for(var row=1; row<=10; row++){//행반복 10번
+	msg = msg + "<tr>";
+	for(var col=1; col<11; col++){//열반복 10번
+		msg = msg + "<td>"+row+","+col+"</td>";
+	}
+	msg = msg + "</tr>";
+}
+msg = msg + "</table><br/>";
+//문제1. 4행 3열의 테이블을 그린다.
+msg = msg + "<table border='1'>";
+for(var row=1; row<5; row++){//4회반복
+	msg = msg + "<tr>"
+	for(var col=1; col<=3;col++){//3번반복
+		msg = msg+"<td>"+row+","+col+"</td>";
+	}
+	msg = msg + "</tr>";
+}
+msg = msg + "</table><br/>";
+msg = msg+"<table border='1'>";
+//문제2. 6행 2열의 테이블을 그린다.
+for(var row=1; row<=6;row++){
+	msg = msg + "<tr>";
+	for(var col=1; col<3;col++){
+		msg = msg + "<td>"+row+","+col+"</td>";
+	}
+	msg = msg + "</tr>"
+}
+msg = msg+"</table><br/>";
+msg = msg +"<table border='1'>";
+for(var row=1; row<=5;row++){
+	msg = msg + "<tr>";
+	for(var col=1; col<9;col++){
+		msg = msg+"<td>"+row+","+col+"</td>";
+	}
+	msg = msg + "</tr>";
+}
+msg = msg + "</table><br/>";
+document.write(msg);
+//문제3. 5행 8열의 테이블을 그린다.
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

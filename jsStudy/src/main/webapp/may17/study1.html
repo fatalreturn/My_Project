@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.tree {line-height:0.6em; font-size:40px; color:red;} 
+</style>
+</head>
+<body>
+<div class="tree">
+<script type="text/javascript">
+document.write("<h2 align='center'>오른쪽 기준 나무</h2>");
+for(var nopi=1; nopi<=10; nopi++){//높이 반복(10회)
+	for(var space=1; space<=(10-nopi) ;space++){
+		document.write("_");
+	}//공백 반복 
+	for(var star=1; star<=nopi; star++){
+		document.write("*");
+	}//잎사귀 반복
+	document.write("<br/>");
+}
+document.write("<h2 align='center'>오른쪽 기준 나무2</h2>");
+for(var nopi=10; nopi>=1; nopi--){//높이 반복(10회)
+	for(var space=1; space<=(10-nopi); space++){//공백반복(0,1,2,3,4,5,6,7,8,9)
+		document.write("_");
+	}
+	for(var star=1; star<=nopi; star++){//잎사귀반복(10,9,8,7,6,5,4,3,2,1)
+		document.write("*");	
+	}
+	document.write("<br/>");
+}
+document.write("<h2 align='center'>오른쪽 홀수 나무</h2>");
+for(var nopi=0; nopi<=18 ;nopi=nopi+2){//높이반복(10회반복)
+	for(var space=1; space<=nopi; space++){//_반복
+		document.write("_");
+	}
+	for(var star=1; star<=(19-nopi); star++){//*반복0:19,2:17,4:15
+		document.write("*");
+	}
+	document.write("<br/>");
+}
+document.write("<h2 align='center'>오른쪽 짝수 나무</h2>");
+for(var nopi=0; nopi<=18; nopi=nopi+2){//높이반복
+	for(var space=1; space<=nopi; space++){//공백반복(0,2,4,,,,18)
+		document.write("_");
+	}
+	for(var star=1; star<=(20-nopi); star++){//20,18,,,,,2
+		document.write("*");
+	}
+	document.write("<br/>");
+}
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+

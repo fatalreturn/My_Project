@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+//열에 단제목이 있는 구구단
+// 1단    2단   3단 .... 9단
+//1*1=1 2*1=2 3*1=3   9*1=9
+document.write("<h2>열에 단제목이 있는 구구단</h2>");
+document.write("<table border='1'>");
+for(var dan=0; dan<10; dan++){//행 횟수 10회
+	document.write("<tr>");
+	for(var su=1; su<10;su++){//열 횟수 9회
+		if(dan == 0){
+			document.write("<td align='center'>"+su+"단</td>");
+		}else {
+			document.write("<td>"+su+"*"+dan+"="+(su*dan)+"</td>");
+		}
+	}
+	document.write("</tr>");
+}
+document.write("</table><br/>");
+document.write("<h2>열에 단제목이 있는 짝수 구구단 2,4,6,8단</h2>");
+document.write("<table border='1'>");
+for(var dan=0; dan<10; dan++){//행반복 10회
+	document.write("<tr>");
+	for(var su=2; su<10; su=su+2){//열반복4회(2,4,6,8)
+		if(dan==0){
+			document.write("<td align='center'>"+su+"단</td>");
+		}else {
+			document.write("<td>"+su+"*"+dan+"="+(su*dan)+"</td>");
+		}
+	}
+	document.write("</tr>");
+}
+document.write("</table><br/>");
+document.write("<h2>열에 단제목이 있는 홀수 구구단</h2>");
+document.write("<table border='1'>");
+for(var dan=0; dan<10; dan++){//행반복 10회
+	document.write("<tr>");
+	for(var su=1; su<=9;su=su+2){//열반복 1,3,5,7,9 5회
+		if(dan == 0){
+			document.write("<td>"+su+"단</td>");
+		}else {
+			document.write(
+				"<td>"+su+"*"+dan+"="+(su*dan)+"</td>");
+		}
+	}
+	document.write("</tr>");
+}
+document.write("</table><br/>");
+document.write("<h2>열에 단제목이 있는 짝수-짝수 구구단</h2>");
+document.write("<table border='1'>");
+for(var dan=0; dan<9; dan=dan+2){//행반복 5회
+	document.write("<tr>");
+	for(var su=2; su<=8; su=su+2){//열반복 4회
+		if(dan == 0){
+			document.write("<td>"+su+"단</td>");
+		}else{
+			document.write(
+				"<td>"+su+"*"+dan+"="+(su*dan)+"</td>");
+		}
+	}
+	document.write("</tr>");
+}
+document.write("</table><br/>")
+document.write("<h2>열에 단제목이 있는 홀수-홀수 구구단</h2>");
+document.write("<table border='1'>");
+for(var dan=-1;dan<10;dan=dan+2){//행반복 6회 반복(-1,1,3,5,7,9)
+	document.write("<tr>");
+	for(var su=1;su<=9;su=su+2){//열반복 5회 반복
+		if(dan == -1){
+			document.write("<td>"+su+"단</td>");
+		}else {
+			document.write(
+					"<td>"+su+"*"+dan+"="+(su*dan)+"</td>");
+		}
+	}
+	document.write("</tr>");
+}
+document.write("</table>");
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

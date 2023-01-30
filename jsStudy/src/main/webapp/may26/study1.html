@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<div align="center">
+<h2>월드컵 조 추첨 ver1.0</h2>
+<p>16강의 팀을 A조와 B조로 나눕니다.</p>
+<input type="button" value="추첨 결과(테이블1개)"
+			onClick="show()"/>
+<input type="button" value="추첨 결과(테이블2개)"
+			onClick="show2()"/>
+<div id="result">이곳에 출력됩니다.</div>
+<h2>월드컵 조 추첨 ver2.0</h2>
+<p>24강의 팀을 A조와 B조, C조로 나눕니다.</p>
+<input type="button" value="결과 보기(테이블1개)"
+			onClick="showResult()"/>
+<div id="target">이곳에 출력됩니다.</div>
+</div>
+<script type="text/javascript">
+function show2(){
+	var teams = ["우루과이","러시아","스웨덴","포르투갈",
+		"프랑스","덴마크","브라질","크로아티아","아르헨티나",
+		"스위스","멕시코","벨기에","나이지라이","나이지리아",
+		"한국","호주"];
+	var imsi = "";
+	for(var cnt=0; cnt<200; cnt++){//200번 반복
+		imsi = teams[0];
+		var nansu = parseInt(Math.random()*16);
+		teams[0] = teams[nansu];
+		teams[nansu] = imsi;
+	}
+	var html = "<table border='1'><tr><th></th>";
+	html=html+"<th>A조</th></tr>";
+	for(var cnt=0; cnt<8;cnt++){
+		html=html+"<tr><td>"+(cnt+1)+"</td>";
+		html=html+"<td>"+teams[cnt]+"</td></tr>";
+	}
+	html=html+"</table><br/>";
+	html=html+"<table border='1'><tr><th></th>";
+	html=html+"<th>B조</th></tr>";
+	for(var cnt=8; cnt<16;cnt++){
+		html=html+"<tr><td>"+(cnt-7)+"</td>";
+		html=html+"<td>"+teams[cnt]+"</td></tr>";
+	}
+	html=html+"</table>";
+	document.getElementById("result").innerHTML=html;
+}
+function show(){
+	var teams = ["우루과이","러시아","스웨덴","포르투갈",
+		"프랑스","덴마크","브라질","크로아티아","아르헨티나",
+		"스위스","멕시코","벨기에","나이지라이","나이지리아",
+		"한국","호주"];
+	var imsi = "";
+	for(var cnt=0; cnt<200; cnt++){//200번 반복
+		imsi = teams[0];
+		var nansu = parseInt(Math.random()*16);
+		teams[0] = teams[nansu];
+		teams[nansu] = imsi;
+	}
+	var html = "<table border='1'><tr><th></th>"
+	html = html+"<th>A조</th><th>B조</th></tr>";
+	//8개의 팀을 출력한다.
+	for(var cnt=0; cnt<8;cnt++){
+		html=html+"<tr><td>"+(cnt+1)+"</td>";
+		html=html+"<td>"+teams[cnt]+"</td>";
+		html=html+"<td>"+teams[cnt+8]+"</td></tr>";
+	}
+	html = html+"</table>";
+	document.getElementById("result").innerHTML=html;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

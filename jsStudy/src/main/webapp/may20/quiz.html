@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+//7판 4승의 주사위 게임
+function rnd(){
+	return parseInt(Math.random()*6+1);
+}
+var winCom = 0; var winI = 0; var draw = 0;
+for(var cnt=0; cnt<7; cnt++){//7회 반복
+	var rndI = rnd();	
+	var rndCom = rnd();
+	if(rndI > rndCom){	winI++;	}
+	else if(rndI < rndCom){	winCom++; }
+	else { draw++;}
+	alert(rndI+","+rndCom);
+	if(winI == 4 || winCom == 4) break;
+}
+document.write("<h2>게이머:"+winI+",컴퓨터:"+winCom+"</h2>");
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist [<!ELEMENT booklist 
+(book+)> <!ELEMENT book (#PCDATA) >]>
+<booklist>
+<book>홍길동전</book>
+<book>시간의 역사</book>
+</booklist>

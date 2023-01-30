@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teamlist 
+	[<!ELEMENT teamlist (team+)> 
+	<!ELEMENT team (#PCDATA)> ]>
+<teamlist>
+<team>토튼험</team>
+<team>서울FC</team>
+</teamlist>

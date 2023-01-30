@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<div align="center">
+<h2>배열을 이용한 성적처리 ver1.0</h2>
+	<p>20명 학생의 성적과 이름을 내림차순으로 출력합니다.</p>
+<input type="button" value="성적처리" onClick="makeResult()"/>
+<div id="result"></div>  
+<p>25명의 학생이 JPT시험(0~990)을 봤습니다. 25명 학생의 명단과 점수,
+		총점,평균,최고점,최저점을 출력합니다.</p>
+<input type="button" value="JPT결과" onClick="makeJpt()"/>
+</div>
+<script type="text/javascript">
+function rnd(num){
+	return parseInt(Math.random()*num);
+}
+function makeResult(){
+	var surname=["김","이","박","최","정","조","하","구",
+			"곽","채","송","곽","문","전","윤"];
+	var firstname=["태균","미정","정수","병환","영호","준",
+			"태건","태범","재성","보환","명훈","현우","동원",
+			"승아","진선","선미","태우","선미"];
+	var name = new Array();//이름배열 생성
+	for(var idx=0; idx<20; idx++){//20번 반복(20명의 학생 이름)
+		name[idx]=surname[rnd(15)]+firstname[rnd(18)];
+	}
+	var score = new Array();//점수배열 생성
+	for(var idx=0; idx<20; idx++){//20번 반복(20명의 점수)
+		score[idx] = rnd(101);//0~100난수
+	}
+	var html="<table border='1'><tr><th></th><th>이름</th>";
+	html=html+"<th>점수</th></tr>";//첫번째 행
+	for(var idx=0; idx<20; idx++){
+		html=html+"<tr><td>"+(idx+1)+"</td>";
+		html=html+"<td>"+name[idx]+"</td>";
+		html=html+"<td>"+score[idx]+"</td></tr>";
+	}
+	html=html+"</table><br/>";
+	var total = 0;//총점이 저장될 변수
+	for(var idx=0; idx<20; idx++){
+		total = total + score[idx];
+	}
+	var ave = total / score.length;//평균=총점/인원수
+	var max = score[0];//첫번째 학생의 점수 
+	var min = score[0];//첫번째 학생의 점수
+	var maxPos = 0;//최고점의 위치
+	var minPos = 0;//최저점의 위치
+	for(var idx=1; idx<20; idx++){
+		if(score[idx] > max) {
+			max = score[idx]; maxPos = idx;
+		}
+		if(score[idx] < min) {
+			min = score[idx]; minPos = idx;
+		}
+	}
+	html = html+"<table border='1'><tr><th>총점</th>";
+	html=html+"<th>평균</th><th>최고점</th><th>이름</th>";
+	html=html+"<th>최저점</th><th>이름</th></tr>";
+	html=html+"<tr><td>"+total+"</td><td>"+ave+"</td>";
+	html=html+"<td>"+max+"</td><td>"+name[maxPos]+"</td>";
+	html=html+"<td>"+min+"</td><td>"+name[minPos]+"</td>";
+	html=html+"</tr><table><br/>";
+	document.getElementById("result").innerHTML=html;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

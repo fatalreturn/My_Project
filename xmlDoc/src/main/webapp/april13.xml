@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist SYSTEM "april1203.dtd">
+<booklist>
+	<book genre="소설">
+		<title>홍길동전</title>
+		<author>허균</author>
+		<price>10000</price>
+		<publisher>길동출판사</publisher>
+	</book>
+	<book genre="과학">
+		<title>시간의 역사</title>
+		<author>스티븐 호킹</author>
+		<price>20000</price>
+		<publisher>호킹 출판사</publisher>
+	</book>
+</booklist>

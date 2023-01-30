@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT tourlist (city+)>
+<!ELEMENT city (name, addr, tel, intro?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT addr (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>
+<!ELEMENT intro (#PCDATA)>
+<!ATTLIST city name (서울|인천|경기|강원) "서울">
+
+
+
+

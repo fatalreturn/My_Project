@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<div align="center">
+<h2>가위,바위,보 게임에 오신 것을 환영합니다~</h2>
+<img alt="" src="../img/gababo.jpeg" width="400" 
+		height="300" id="target1">
+<img alt="" src="" id="target2"><br/>
+<div id="result"></div>
+<font size="5" color="red">원하시는 버튼을 클릭하세요.</font>
+<input type="button" value="게임시작" onClick="goGame()"/>
+<input type="button" value="홈으로" onClick="goHome()"/>
+<script type="text/javascript">
+function goGame(){
+	var com=parseInt(Math.random()*3+1);//1(가위),2(바위),3(보)
+	var gamer=parseInt(
+			prompt("가위(1),바위(2),보(3) 중 하나를 입력하세요."));
+	var comImg = ""; var gamerImg = "";
+	comImg = findImage(com);//컴퓨터의 이미지 
+	gamerImg = findImage(gamer);//게이머의 이미지
+	document.getElementById("target1").src = comImg;
+	document.getElementById("target2").src = gamerImg;
+	document.getElementById("target2").width = 400;
+	document.getElementById("target2").height = 300;
+	var msg = findWinner3(com, gamer);
+	document.getElementById("result").innerHTML = msg;
+}
+function findWinner3(com,gamer){
+	var msg = "";
+	if(com == gamer){
+		msg = "<h3>무승부입니다.</h3>";
+	}else if( (gamer+2) % 3 == com % 3){
+		msg = "<h3>게이머가 승리입니다.</h3>";
+	}else {
+		msg = "<h3>컴퓨터가 승리입니다.</h3>";
+	}
+	return msg;
+}
+function findWinner2(com,gamer){
+	var msg = "";
+	if(com == gamer){
+		msg = "<h3>무승부입니다.</h3>";
+	}else if((gamer==1 && com==3) || 
+			(gamer==2 && com==1) || 
+			(gamer==3 && com==2)){
+		msg = "<h3>게이머가 승리입니다.</h3>";
+	}else {
+		msg = "<h3>컴퓨터가 승리입니다.</h3>";
+	}
+	return msg;
+}
+function findWinner(com, gamer){
+	var msg = "";
+	switch(com){
+	case 1:
+			if(gamer == 1){
+				msg = "무승부";
+			}else if(gamer == 2){
+				msg = "게이머 승";
+			}else if(gamer == 3){
+				msg = "컴퓨터 승";
+			}
+			break;
+	case 2:
+			switch(gamer){
+			case 1:msg="컴퓨터 승"; break;
+			case 2:msg="무승부"; break;
+			case 3:msg="게이머 승"; break;
+			}
+			break;
+	case 3:
+			switch(gamer){
+			case 1:msg="게이머 승"; break;
+			case 2:msg="컴퓨터 승"; break;
+			case 3:msg="무승부"; break;
+			}
+			break;
+	}
+	return msg;
+}
+function findImage(num){
+	var name = "";
+	switch(num){
+	case 1: name="../img/gawi.png"; break;
+	case 2: name="../img/bawi.jpg"; break;
+	case 3: name="../img/bo.png";
+	}
+	return name;
+}
+function goHome(){
+	location.href = "../gameRoom.html";
+}
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

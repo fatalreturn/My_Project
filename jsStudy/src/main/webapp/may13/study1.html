@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+//문제:1+2+3+...+98+99+100의 합을 출력
+var hap = 0;
+for(var i=1; i<101; i++){
+	hap = hap + i;	
+}
+document.write("<h2>결과:"+hap+"</h2>");
+hap = 0;//홀수의 합을 담기 위해 0으로 초기화함
+for(var i=1; i<100; i=i+2){
+	hap = hap + i;
+}//홀수만 합
+document.write("<h2>홀수합:"+hap+"</h2>");
+hap = 0;
+for(var i=1; i<=100; i++){
+	if(i % 2 != 0)	hap = hap + i;
+}//홀수를 골라내서 합
+document.write("<h2>홀수합:"+hap+"</h2>");
+//문제:1+3+5+7+...+97+99의 합을 출력
+hap = 0;
+for(var i=2; i<= 100; i=i+2){
+	hap = hap + i;
+}
+document.write("<h2>짝수합:"+hap+"</h2>");
+hap = 0;
+for(var i=1; i<= 100; i++){
+	if(i % 2 == 0) hap = hap + i;
+}
+document.write("<h2>짝수합:"+hap+"</h2>");
+//문제:2+4+6+8+...+96+99+100의 합을 출력
+</script>
+</body>
+</html>
+
+
+
+
+
+
